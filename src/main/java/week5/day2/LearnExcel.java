@@ -19,6 +19,7 @@ public class LearnExcel {
 		System.out.println("Column num is "+cellNum);
 		for (int j = 1; j <= rowNum; j++) {
 			XSSFRow row = sheet.getRow(j);
+			
 			for (int i = 0; i < cellNum; i++) {
 				XSSFCell cell = row.getCell(i);
 				String value = cell.getStringCellValue();
